@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ask an Expert - E-FARM RWANDA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #011602;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #350101;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+    }
+    .section {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      color: #2e7d32;
+    }
+    label, textarea, input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    button {
+      background: #2e7d32;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #1b5e20;
+    }
+    .response {
+      color: green;
+      font-size: 16px;
+    }
+    footer {
+  background: #142314;
+  color: white;
+  text-align: center;
+  padding: 30px 0; /* Increased padding for height adjustment */
+  min-height: 40px; /* Ensures a minimum height */
+  margin-top: 20px;
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>E-FARM RWANDA</h1>
+  <p>Empowering farmers through digital agriculture</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="farming tip.html">Farming Tips</a>
+  <a href="market price.html">Market Prices</a>
+  <a href="weather.html">Weather</a>
+  <a href="ask an expert.html">Ask an Expert</a>
+  <a href="connect to buyers.html">Connect to Buyers</a>
+  <a href="contactus.html">Contact Us</a>
+
+</nav>
+
+<div class="container">
+  <div class="section">
+    <h2>Ask an Expert</h2>
+    <p>If you have any questions about farming, feel free to ask our experts. We are here to help!</p>
+
+    <form id="questionForm">
+      <label for="question">Your Question:</label>
+      <textarea id="question" rows="4" required></textarea>
+      
+      <div style="display: flex; gap: 20px;">
+  <button type="submit">Submit Question</button>
+  <button type="reset">Clear</button>
+</div>
+
+    </form>
+
+    <p id="questionResponse" class="response"></p>
+  </div>
+</div>
+
+<script>
+  // Handle question submission
+  document.getElementById("questionForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    // Display confirmation response
+    document.getElementById("questionResponse").textContent =
+      "Your question has been submitted. Our expert will respond shortly!";
+    // Reset the form
+    this.reset();
+  });
+</script>
+<footer>
+  <p>E-FARM RWANDA</p>
+</footer>
+</body>
+</html>

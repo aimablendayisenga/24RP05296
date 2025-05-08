@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather - E-FARM RWANDA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #011602;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #350101;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+    }
+    .section {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      color: #2e7d32;
+    }
+    .weather-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .weather-images div {
+      text-align: center;
+      width: 48%; /* Ensures images are aligned side by side */
+      margin-bottom: 20px;
+    }
+    .weather-images img {
+      width: 85%; /* Ensures all images are the same size */
+      height: 250px; /* Set fixed height */
+      object-fit: cover; /* Ensures the aspect ratio is maintained */
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #142314;
+      color: white;
+      text-align: center;
+      padding: 30px 0; /* Increased padding for height adjustment */
+      min-height: 40px; /* Ensures a minimum height */
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>E-FARM RWANDA</h1>
+  <p>Empowering farmers through digital agriculture</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="farming tip.html">Farming Tips</a>
+  <a href="market price.html">Market Prices</a>
+  <a href="weather.html">Weather</a>
+  <a href="ask an expert.html">Ask an Expert</a>
+  <a href="connect to buyers.html">Connect to Buyers</a>
+  <a href="contactus.html">Contact Us</a>
+</nav>
+
+<div class="container">
+  <div class="section">
+    <h2>Weather Forecast</h2>
+    <p><strong>Today:</strong> Sunny with light showers in the afternoon (24°C)</p>
+    <div class="weather-images">
+      <div>
+        <img src="sun.png" alt="Sunny Weather">
+        <p><strong>Sunny</strong></p>
+      </div>
+      <div>
+        <img src="shower.jpg" alt="Showers">
+        <p><strong>Showers</strong></p>
+      </div>
+    </div>
+    
+    <p><strong>Tomorrow:</strong> Cloudy with chances of rain (22°C)</p>
+    <div class="weather-images">
+      <div>
+        <img src="cloud.png" alt="Cloudy Weather">
+        <p><strong>Cloudy</strong></p>
+      </div>
+      <div>
+        <img src="rain.jpg" alt="Rainy Weather">
+        <p><strong>Rainy</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>E-FARM RWANDA</p>
+</footer>
+
+</body>
+</html>

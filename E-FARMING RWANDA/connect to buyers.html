@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connect to Buyers - E-FARM RWANDA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #011602;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #350101;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+    }
+    .section {
+      background: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      color: #2e7d32;
+    }
+    label, input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    button {
+      background: #2e7d32;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: black;
+      color: white;
+    }
+    .response {
+      color: green;
+      font-size: 16px;
+    }
+    footer {
+  background: #142314;
+  color: white;
+  text-align: center;
+  padding: 30px 0; /* Increased padding for height adjustment */
+  min-height: 40px; /* Ensures a minimum height */
+  margin-top: 20px;
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>E-FARM RWANDA</h1>
+  <p>Empowering farmers through digital agriculture</p>
+</header>
+
+<nav>
+   <a href="index.html">Home</a>
+  <a href="farming tip.html">Farming Tips</a>
+  <a href="market price.html">Market Prices</a>
+  <a href="weather.html">Weather</a>
+  <a href="ask an expert.html">Ask an Expert</a>
+  <a href="connect to buyers.html">Connect to Buyers</a>
+  <a href="contactus.html">Contact Us</a>
+
+</nav>
+
+<div class="container">
+  <div class="section">
+    <h2>Connect to Buyers / Cooperatives</h2>
+    <p>Fill in the form below to express your interest in selling your products to buyers or cooperatives.</p>
+
+    <form id="connectForm">
+      <label for="name">Your Name(e.g., Aimable):</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <label for="product">Product (e.g., Tomatoes):</label>
+      <input type="text" id="product" placeholder="Enter your product" required />
+      <label for="quantity">Quality (e.g., Orginal):</label>
+      <input type="text" id="quality" placeholder="Enter qulity" required />
+      <label for="quantity">Quantity (e.g., 100 kg):</label>
+      <input type="number" id="quantity" placeholder="Enter quantity" required />
+
+      <button type="submit">Send Request</button>
+    </form>
+
+    <p id="connectResponse" class="response"></p>
+  </div>
+</div>
+
+<script>
+  // Handle connect to buyers form submission
+  document.getElementById("connectForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    // Display confirmation response
+    document.getElementById("connectResponse").textContent =
+      "Your request has been sent. A buyer/cooperative will contact you shortly.";
+    // Reset the form
+    this.reset();
+  });
+</script>
+<footer>
+  <p>E-FARM RWANDA</p>
+</footer>
+</body>
+</html>
